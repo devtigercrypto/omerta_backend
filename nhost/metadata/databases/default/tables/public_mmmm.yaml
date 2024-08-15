@@ -1,3 +1,11 @@
 table:
   name: mmmm
   schema: public
+array_relationships:
+  - name: nnns
+    using:
+      foreign_key_constraint_on:
+        column: mmid
+        table:
+          name: nnn
+          schema: public

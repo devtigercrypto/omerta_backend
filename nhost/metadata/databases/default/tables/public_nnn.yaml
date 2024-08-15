@@ -1,0 +1,7 @@
+table:
+  name: nnn
+  schema: public
+object_relationships:
+  - name: mmmm
+    using:
+      foreign_key_constraint_on: mmid
