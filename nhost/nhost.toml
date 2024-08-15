@@ -94,7 +94,9 @@ enabled = false
 enabled = false
 
 [auth.method.oauth.discord]
-enabled = false
+enabled = true
+clientId = '1273595364376842303'
+clientSecret = 'XNRTmq1lt9ffqsUWmIVveoJlRvzOGwzg'
 
 [auth.method.oauth.facebook]
 enabled = false
