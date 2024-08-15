@@ -1,3 +1,13 @@
 table:
   name: debdb
   schema: public
+array_relationships:
+  - name: newrab
+    using:
+      manual_configuration:
+        column_mapping:
+          mmmID: id
+        insertion_order: null
+        remote_table:
+          name: mmmm
+          schema: public
