@@ -1,6 +1,23 @@
-actions: []
+actions:
+  - name: actionName
+    definition:
+      kind: ""
+      handler: https://local.functions.nhost.run/v1/hello
+      request_transform:
+        body:
+          action: transform
+          template: |-
+            {
+              "hello": {{$body.input.arg1.hello}}
+            }
+        method: POST
+        query_params: {}
+        template_engine: Kriti
+        version: 2
 custom_types:
   enums: []
-  input_objects: []
-  objects: []
+  input_objects:
+    - name: SampleInput
+  objects:
+    - name: SampleOutput
   scalars: []
