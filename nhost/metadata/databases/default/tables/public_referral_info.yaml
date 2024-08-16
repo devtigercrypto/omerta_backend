@@ -1,0 +1,3 @@
+table:
+  name: referral_info
+  schema: public

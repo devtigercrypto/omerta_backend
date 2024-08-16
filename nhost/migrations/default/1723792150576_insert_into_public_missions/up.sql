@@ -1,0 +1,1 @@
+INSERT INTO "public"."missions"("id", "platform", "xp", "verification", "created_at", "updated_at") VALUES (4, E'INSTAGRAM', 20, E'MANUAL', E'2024-08-16T07:09:10.545951+00:00', E'2024-08-16T07:09:10.545951+00:00');

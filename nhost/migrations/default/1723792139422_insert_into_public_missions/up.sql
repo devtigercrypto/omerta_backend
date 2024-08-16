@@ -1,0 +1,1 @@
+INSERT INTO "public"."missions"("id", "platform", "xp", "verification", "created_at", "updated_at") VALUES (3, E'MEDIUM', 20, E'MANUAL', E'2024-08-16T07:08:59.39703+00:00', E'2024-08-16T07:08:59.39703+00:00');
