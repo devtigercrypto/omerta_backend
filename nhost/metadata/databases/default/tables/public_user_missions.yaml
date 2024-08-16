@@ -1,3 +1,10 @@
 table:
   name: user_missions
   schema: public
+object_relationships:
+  - name: mission
+    using:
+      foreign_key_constraint_on: mission_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id

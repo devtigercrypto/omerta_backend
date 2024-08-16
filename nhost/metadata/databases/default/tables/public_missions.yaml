@@ -1,3 +1,11 @@
 table:
   name: missions
   schema: public
+array_relationships:
+  - name: user_missions
+    using:
+      foreign_key_constraint_on:
+        column: mission_id
+        table:
+          name: user_missions
+          schema: public

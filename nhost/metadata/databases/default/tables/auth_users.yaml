@@ -91,7 +91,23 @@ object_relationships:
   - name: defaultRoleByRole
     using:
       foreign_key_constraint_on: default_role
+  - name: referred_by_info
+    using:
+      manual_configuration:
+        column_mapping:
+          id: user_id
+        insertion_order: null
+        remote_table:
+          name: referral_info
+          schema: public
 array_relationships:
+  - name: referral_infos
+    using:
+      foreign_key_constraint_on:
+        column: referred_by
+        table:
+          name: referral_info
+          schema: public
   - name: refreshTokens
     using:
       foreign_key_constraint_on:
@@ -120,3 +136,10 @@ array_relationships:
         table:
           name: user_providers
           schema: auth
+  - name: user_missions
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: user_missions
+          schema: public
