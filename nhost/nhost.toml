@@ -16,8 +16,6 @@ enableAllowList = false
 enableConsole = true
 enableRemoteSchemaPermissions = false
 enabledAPIs = ['metadata', 'graphql', 'pgdump', 'config']
-liveQueriesMultiplexedRefetchInterval = 1000
-stringifyNumericTypes = false
 
 [hasura.logs]
 level = 'warn'
@@ -32,15 +30,11 @@ version = 18
 [auth]
 version = '0.31.0'
 
-[auth.elevatedPrivileges]
-mode = 'disabled'
-
 [auth.redirections]
 clientUrl = 'http://localhost:3000'
 
 [auth.signUp]
 enabled = true
-disableNewUsers = false
 
 [auth.user]
 [auth.user.roles]
