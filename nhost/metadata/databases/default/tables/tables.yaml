@@ -8,6 +8,7 @@
 - "!include auth_user_security_keys.yaml"
 - "!include auth_users.yaml"
 - "!include public_missions.yaml"
+- "!include public_otp_verification.yaml"
 - "!include public_referral_info.yaml"
 - "!include public_user_missions.yaml"
 - "!include storage_buckets.yaml"

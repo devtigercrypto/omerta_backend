@@ -1,0 +1,50 @@
+table:
+  name: otp_verification
+  schema: public
+object_relationships:
+  - name: user
+    using:
+      manual_configuration:
+        column_mapping:
+          user_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - is_valid
+        - id
+        - otp
+        - created_at
+        - updated_at
+        - user_id
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - is_valid
+        - id
+        - otp
+        - created_at
+        - updated_at
+        - user_id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - is_valid
+        - id
+        - otp
+        - created_at
+        - updated_at
+        - user_id
+      filter: {}
+      check: null
+    comment: ""

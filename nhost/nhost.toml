@@ -16,8 +16,6 @@ enableAllowList = false
 enableConsole = true
 enableRemoteSchemaPermissions = false
 enabledAPIs = ['metadata', 'graphql', 'pgdump', 'config']
-liveQueriesMultiplexedRefetchInterval = 1000
-stringifyNumericTypes = false
 
 [hasura.logs]
 level = 'warn'
@@ -32,15 +30,12 @@ version = 18
 [auth]
 version = '0.31.0'
 
-[auth.elevatedPrivileges]
-mode = 'disabled'
-
 [auth.redirections]
-clientUrl = 'http://localhost:3000'
+clientUrl = 'http://localhost:3000/profile'
+allowedUrls = ['http://localhost:3000/profile']
 
 [auth.signUp]
 enabled = true
-disableNewUsers = false
 
 [auth.user]
 [auth.user.roles]
@@ -76,7 +71,7 @@ enabled = false
 
 [auth.method.emailPassword]
 hibpEnabled = false
-emailVerificationRequired = true
+emailVerificationRequired = false
 passwordMinLength = 9
 
 [auth.method.smsPasswordless]
@@ -108,7 +103,9 @@ enabled = false
 enabled = false
 
 [auth.method.oauth.google]
-enabled = false
+enabled = true
+clientId = '920278056887-vfcne6io3s3gmvm71nl7cah6ohdp9pba.apps.googleusercontent.com'
+clientSecret = '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'
 
 [auth.method.oauth.linkedin]
 enabled = false
