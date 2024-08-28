@@ -1,18 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-<head>
-  <meta charset="utf-8" />
-</head>
+      @font-face {
+        font-family: "fCF-semibold";
+        src: url("https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/fonts/TTF/CFFortusnova-SemiBold.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "fCF-light";
+        src: url("https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/fonts/TTF/CFFortusnova-Medium.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      h1,
+      a.button {
+        font-family: "fCF-semibold", Arial, sans-serif;
+      }
+      a.button {
+        font-family: "fCF-light", Arial, sans-serif;
+      }
 
-<body>
-  <h2>Reset Password</h2>
-  <p>Use this link to reset your password:</p>
-  <p>
-    <a href="${link}">
-      Reset password
-    </a>
-  </p>
-</body>
+      a.button {
+        text-decoration: none;
+      }
 
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: black;
+      background-image: url('img/bg.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: auto;
+      color: white;
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 24px;
+    "
+  >
+    <!-- Logo -->
+    <div style="padding: 20px">
+      <img
+        src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/omerta-logo.png"
+        alt="Logo"
+        style="background-color: transparent"
+      />
+    </div>
+    <h1 style="color: #fff; font-size: 40px">ACCOUNT RECOVERY</h1>
+
+    <!-- Message -->
+    <div
+      style="margin: 20px 0; text-align: center; padding: 0px 30px"
+      id="responsive-text"
+    >
+      <!-- <p style="font-weight: 600">Hi Danny,</p> -->
+      <p style="font-size: 18px">
+        You have requested us to send a link to reset your password for your
+        OMERTA account, click on the button below.
+      </p>
+    </div>
+
+    <style>
+      /* Media query for screens with width 920px or less */
+      @media (max-width: 920px) {
+        #responsive-text {
+          text-align: left !important;
+          padding: 0 15px;
+        }
+      }
+    </style>
+
+    <!-- Read More Button -->
+    <div style="margin: 20px 0">
+      <a
+        href="${link}"
+        class="button"
+        style="
+          display: inline-block;
+          background-image: url('img/bg-red.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          color: #fff;
+          padding: 15px 15px;
+          font-size: 24px;
+          text-transform: uppercase;
+        "
+        >Reset Password</a
+      >
+    </div>
+    <div
+      style="margin: 20px 0; text-align: center; padding: 0px 30px"
+      id="responsive-text-2"
+    >
+      <p style="font-size: 18px">
+        If you didn’t initiate the request, you can safely ignore the mail.
+      </p>
+      <p style="font-size: 18px; margin: 0; padding: 0">Best Regards,</p>
+      <p style="font-size: 18px; color: #b71515; margin-top: 5px; padding: 0">
+        OMERTA Team.
+      </p>
+    </div>
+
+    <style>
+      /* Media query for screens with width 920px or less */
+      @media (max-width: 920px) {
+        #responsive-text-2 {
+          text-align: left !important;
+          padding: 0 15px;
+        }
+      }
+    </style>
+
+    <!-- Social Icons -->
+    <div
+      class="social-icons"
+      style="
+        margin: 20px 0;
+        padding: 10px 0;
+        border-top: 1px solid #bdbdbd;
+        border-bottom: 1px solid #bdbdbd;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      "
+    >
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/x.png"
+          alt="x-logo"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-2.png"
+          alt="telegram"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-3.png"
+          alt="logo-3"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-4.png"
+          alt="instagram"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-5.png"
+          alt="YouTube"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-6.png"
+          alt="logo-6"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://s3.eu-north-1.amazonaws.com/omerta.source/Omerta_email/img/logo-7.png"
+          alt="logo-7"
+        />
+      </a>
+    </div>
+
+    <style>
+      /* Media query for screens 400px and below  for mobile device screens*/
+      @media (max-width: 400px) {
+        .social-icons {
+          gap: 0px !important;
+        }
+      }
+    </style>
+    <!-- Footer -->
+    <div style="padding: 20px; font-size: 14px; color: #bdbdbd">
+      <p>© 2024 OMERTA. All rights reserved.</p>
+      <p>
+        You are receiving this mail because you registered to join the OMERTA
+        platform as a player or a crypto enthusiast. This also shows that you
+        agree to our Terms of use and Privacy Policies. If you no longer want to
+        receive mails from us, click the unsubscribe link below to unsubscribe.
+      </p>
+    </div>
+    <!-- copyright -->
+    <div class="copyright text-center">
+      <ul
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          align-items: center;
+          padding: 0;
+        "
+      >
+        <li>
+          <a
+            href="#"
+            style="
+              font-size: 16px;
+              font-family: 'Poppins';
+              color: #bdbdbd;
+              text-decoration: none;
+            "
+            >FAQS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            style="
+              font-size: 16px;
+              font-family: 'Poppins';
+              color: #bdbdbd;
+              text-decoration: none;
+            "
+            >Terms & Conditions</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            style="
+              font-size: 16px;
+              font-family: 'Poppins';
+              color: #bdbdbd;
+              text-decoration: none;
+            "
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            style="
+              font-size: 16px;
+              font-family: 'Poppins';
+              color: #bdbdbd;
+              text-decoration: none;
+            "
+            >Unsubscribe</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <style>
+      /* Media query for screens 400px and below  for mobile device screens*/
+      @media (max-width: 400px) {
+        .copyright ul {
+          flex-direction: column;
+          gap: 5px !important;
+          list-style-type: none;
+        }
+      }
+    </style>
+  </body>
 </html>

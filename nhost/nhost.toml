@@ -31,7 +31,8 @@ version = 18
 version = '0.31.0'
 
 [auth.redirections]
-clientUrl = 'http://localhost:3000'
+clientUrl = 'http://localhost:3000/profile'
+allowedUrls = ['http://localhost:3000/profile']
 
 [auth.signUp]
 enabled = true
@@ -102,7 +103,9 @@ enabled = false
 enabled = false
 
 [auth.method.oauth.google]
-enabled = false
+enabled = true
+clientId = '920278056887-vfcne6io3s3gmvm71nl7cah6ohdp9pba.apps.googleusercontent.com'
+clientSecret = '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'
 
 [auth.method.oauth.linkedin]
 enabled = false
