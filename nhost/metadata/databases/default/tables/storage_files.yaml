@@ -44,7 +44,6 @@ configuration:
     insert: insertFiles
     insert_one: insertFile
     select: files
-    select_aggregate: filesAggregate
     select_by_pk: file
     update: updateFiles
     update_by_pk: updateFile
