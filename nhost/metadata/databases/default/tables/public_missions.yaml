@@ -9,3 +9,45 @@ array_relationships:
         table:
           name: user_missions
           schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - xp
+        - platform
+        - verification
+        - created_at
+        - updated_at
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - xp
+        - platform
+        - verification
+        - created_at
+        - updated_at
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - xp
+        - platform
+        - verification
+        - created_at
+        - updated_at
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: user
+    permission:
+      filter: {}
+    comment: ""
