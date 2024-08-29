@@ -1,0 +1,14 @@
+type Query {
+  actionName(
+    arg1: SampleInput!
+  ): SampleOutput
+}
+
+input SampleInput {
+  hello: String!
+}
+
+type SampleOutput {
+  hello: String!
+}
+
