@@ -143,6 +143,37 @@ array_relationships:
         table:
           name: user_missions
           schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - email
+        - new_email
+        - disabled
+        - email_verified
+        - is_anonymous
+        - phone_number_verified
+        - locale
+        - metadata
+        - active_mfa_type
+        - avatar_url
+        - default_role
+        - display_name
+        - otp_hash
+        - otp_method_last_used
+        - password_hash
+        - phone_number
+        - ticket
+        - totp_secret
+        - webauthn_current_challenge
+        - created_at
+        - last_seen
+        - otp_hash_expires_at
+        - ticket_expires_at
+        - updated_at
+        - id
+    comment: ""
 select_permissions:
   - role: user
     permission:
@@ -173,4 +204,36 @@ select_permissions:
         - updated_at
         - id
       filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - email
+        - new_email
+        - disabled
+        - email_verified
+        - is_anonymous
+        - phone_number_verified
+        - locale
+        - metadata
+        - active_mfa_type
+        - avatar_url
+        - default_role
+        - display_name
+        - otp_hash
+        - otp_method_last_used
+        - password_hash
+        - phone_number
+        - ticket
+        - totp_secret
+        - webauthn_current_challenge
+        - created_at
+        - last_seen
+        - otp_hash_expires_at
+        - ticket_expires_at
+        - updated_at
+        - id
+      filter: {}
+      check: null
     comment: ""
