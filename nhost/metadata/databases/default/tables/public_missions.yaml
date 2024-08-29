@@ -21,3 +21,16 @@ select_permissions:
         - updated_at
       filter: {}
     comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - xp
+        - platform
+        - verification
+        - created_at
+        - updated_at
+      filter: {}
+      check: {}
+    comment: ""

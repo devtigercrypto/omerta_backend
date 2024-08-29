@@ -48,3 +48,8 @@ update_permissions:
       filter: {}
       check: null
     comment: ""
+delete_permissions:
+  - role: user
+    permission:
+      filter: {}
+    comment: ""
