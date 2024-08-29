@@ -146,6 +146,14 @@ enabled = false
 version = '14.11-20240515-1'
 
 [provider]
+[provider.smtp]
+user = 'info@omertagame.com'
+password = 'wysf jewg axfs fyyj'
+sender = 'info@omertagame.com'
+host = 'smtp.gmail.com'
+port = 587
+secure = true
+method = 'LOGIN'
 
 [storage]
 version = '0.6.0'
