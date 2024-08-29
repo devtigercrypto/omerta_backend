@@ -36,7 +36,7 @@ version = '0.31.0'
 fqdn = ['auth.omertagame.com']
 
 [auth.redirections]
-clientUrl = 'http://localhost:3000/profile'
+clientUrl = 'https://development.omertagame.com/profile'
 allowedUrls = ['http://localhost:3000/profile', 'https://*.omertagame.com/profile-settings', 'http://localhost:3000/profile-settings']
 
 [auth.signUp]
@@ -45,7 +45,7 @@ enabled = true
 [auth.user]
 [auth.user.roles]
 default = 'user'
-allowed = ['user', 'me']
+allowed = ['user', 'me', 'public']
 
 [auth.user.locale]
 default = 'en'
